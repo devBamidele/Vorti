@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pages.BodyPage">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="bodyPage"
+            type="com.example.vorti.pages.BodyPage" />
+        
+        <variable
+            name="viewModel"
+            type="com.example.vorti.model.VortiViewModel" />
+    </data>
+
+    <!-- Make it scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Enable constrain capabilities -->
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/intro"
+                style="@style/Widget.Vorti.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/boss"
+                android:textColor="@color/Black_Coral"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/Widget.Vorti.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@{viewModel.name}"
+                android:textColor="@color/Black_Coral"
+                android:textSize="@dimen/bodyText"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/intro"
+                tools:text="The name text goes here" />
+
+            <TextView
+                android:id="@+id/email"
+                style="@style/Widget.Vorti.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@{viewModel.email}"
+                android:textColor="@color/Black_Coral"
+                android:textSize="@dimen/bodyText"
+                app:layout_constraintTop_toBottomOf="@id/name"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="The Email goes here"/>
+
+            <TextView
+                android:id="@+id/password"
+                style="@style/Widget.Vorti.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@{viewModel.password1}"
+                android:textColor="@color/Black_Coral"
+                android:textSize="@dimen/bodyText"
+                app:layout_constraintTop_toBottomOf="@id/email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="Your password is displayed here"/>
+
+            <TextView
+                android:id="@+id/remembrance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@{viewModel.rememberDisplay()}"
+                android:textColor="@color/Black_Coral"
+                android:textSize="@dimen/bodyText"
+                app:layout_constraintTop_toBottomOf="@id/password"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:text="Remember me or not"/>
+
+            
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</layout>

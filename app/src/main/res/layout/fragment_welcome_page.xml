@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Layout for the welcome screen-->
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".pages.WelcomePage">
+
+    <data>
+        <import type="android.view.View"/>
+        <!-- Reference the WelcomePage class -->
+        <variable
+            name="welcomePage"
+            type="com.example.vorti.pages.WelcomePage" />
+        
+        <!-- Access the viewModel-->
+        <variable
+            name="viewModel"
+            type="com.example.vorti.model.VortiViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- The main heading text-->
+            <TextView
+                android:id="@+id/Vorti"
+                style="@style/Widget.Vorti.TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="150dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/vorti"
+                android:textSize="75sp"
+                android:textColor="@color/Black_Coral"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- The "SIGN UP" button id=signup -->
+            <Button
+                android:id="@+id/signup"
+                android:onClick="@{() -> welcomePage.signup()}"
+                style="@style/Widget.VortiOutlined.Button"
+                android:layout_marginTop="300dp"
+                android:text="@string/sign_up"
+                app:cornerRadius="@dimen/cornerRadius"
+                app:layout_constraintTop_toBottomOf="@id/Vorti"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <!-- The "LOGIN" button -->
+            <Button
+                android:id="@+id/login"
+                style="@style/Widget.Vorti.Button"
+                android:onClick="@{() -> welcomePage.login()}"
+                android:elevation="@dimen/buttonElevation"
+                android:layout_marginTop="@dimen/textgap"
+                android:text="@string/login"
+                app:cornerRadius="@dimen/cornerRadius"
+                app:layout_constraintTop_toBottomOf="@id/signup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

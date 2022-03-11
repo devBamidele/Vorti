@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Vorti</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Welcomeback">Welcome back</string>
+    <string name="loginText">Login to your account</string>
+    <string name="email_username">Your Email</string>
+    <string name="password">Password</string>
+    <string name="remember_me">Remember me</string>
+    <string name="forgot_password">Forgot password ?</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an account ?</string>
+    <string name="sign_up">Sign up</string>
+    <string name="vorti">Vorti</string>
+    <string name="let_s_get_started">Let\'s Get Started</string>
+    <string name="create_a_new_account">Create a new account</string>
+    <string name="full_name">Full Name</string>
+    <string name="password_again">Password Again</string>
+    <string name="have_an_account">Have an account ?</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="invalid_name">Invalid name</string>
+    <string name="invalid_Email">Invalid email</string>
+    <string name="invalid_Password">Invalid password</string>
+    <string name="unmatchingPassword">Password does not match</string>
+    <string name="complete">Please complete the sign up process</string>
+    <string name="incorrect">Incorrect email or password</string>
+    <string name="remeberme">Your information will be saved automatically</string>
+    <string name="consider">Consider Signing up instead</string>
+    <string name="email1">bamideledavid.ajewole@gmail.com</string>
+    <string name="email2">bamideledavid.femi@gmail.com</string>
+    <string name="email3">testemail.vorti@gmail.com</string>
+
+    <string name="boss">You finally remembered us ba !</string>
+    <string name="True">true</string>
+    <string name="False">false</string>
+
+</resources>

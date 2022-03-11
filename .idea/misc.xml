@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/drawable/ic_email_24.xml" value="0.1955" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/drawable/ic_error.xml" value="0.1" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/drawable/ic_lock_24.xml" value="0.1955" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/drawable/ic_person_24.xml" value="0.1955" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/layout-v21/fragment_signin_page.xml" value="0.25" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/layout/fragment_body_page.xml" value="0.20817843866171004" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/layout/fragment_login_page.xml" value="0.44895833333333335" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/layout/fragment_signin_page.xml" value="0.5" />
+        <entry key="..\:/Users/D A M I/AndroidStudioProjects/Vorti/app/src/main/res/layout/fragment_welcome_page.xml" value="0.33" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.22" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.Vorti.TextView" parent="Widget.MaterialComponents.TextView">
+        <item name= "android:minHeight" >48dp</item>
+        <item name= "android:paddingStart"> 5dp</item>
+        <item name= "android:gravity" >center_vertical </item>
+        <item name= "android:textAppearance" >?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="Widget.Vorti.CompoundButton.RadioButton" parent="Widget.MaterialComponents.CompoundButton.RadioButton">
+        <item name="android:paddingStart">8dp</item>
+        <item name="android:paddingEnd"> 5dp</item>
+        <item name="android:textAppearance">?attr/textAppearanceBody1</item>
+    </style>
+
+    <style name="Widget.Vorti.TextInputLayout.OutlinedBox" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:layout_width">400dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:fontFamily">@font/poppins_light</item>
+        <item name="android:textColor">@color/Black_Coral</item>
+        <item name="android:textColorHint">@color/Black_Coral</item>
+        <item name="boxStrokeErrorColor">@color/red_700</item>
+        <item name="errorIconTint">@color/red_700</item>
+        <item name="errorTextColor">@color/red_700</item>
+        <item name="errorIconDrawable">@drawable/ic_error</item>
+        <item name="helperTextTextAppearance">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+    </style>
+
+    <style name="Widget.Vorti.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">370dp</item>
+        <item name="android:textSize">@dimen/buttonText</item>
+        <item name="android:elevation">@dimen/buttonElevation</item>
+    </style>
+
+    <!--Todo: Add android elevation -->
+    <style name="Widget.VortiOutlined.Button" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_height">60dp</item>
+        <item name="android:layout_width">370dp</item>
+        <item name="android:textSize">@dimen/buttonText</item>
+
+    </style>
+
+
+
+
+</resources>

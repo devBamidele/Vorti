@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="regularText">22sp</dimen>
+    <dimen name="header">40sp</dimen>
+    <dimen name="textfield">18sp</dimen>
+    <dimen name="textgap">5dp</dimen>
+    <dimen name="buttonText">20sp</dimen>
+    <dimen name="smallerText">19sp</dimen>
+    <dimen name="cornerRadius">20dp</dimen>
+    <dimen name="buttonElevation">5dp</dimen>
+    <dimen name="bodyText">30sp</dimen>
+    <dimen name="textRadius">15dp</dimen>
+</resources>
