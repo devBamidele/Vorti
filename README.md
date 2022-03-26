@@ -11,3 +11,15 @@ Practice what I've learnt in Android App dev so far
 
 ## Note
 **This personal project was done after completion of Unit 3: Navigation, Android Basics in Kotlin**
+## Screenshots
+**Onboarding Page**
+--
+<img src = "app/src/main/res/drawable/firstpage.jpg" width = "400">
+
+**Login Page**
+--
+<img src = "app/src/main/res/drawable/logpage.jpg" width = "400">
+
+**Signin Page**
+--
+<img src = "app/src/main/res/drawable/signpage.jpg" width = "400">
