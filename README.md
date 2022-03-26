@@ -1,5 +1,5 @@
 # Vorti
-Practice what I've learnt in Android App dev so far
+An idea a friend of mine gave me
 
 ## Description
 - On launching the app, the boarding screen is shown which prompts the user to either sign up or login
