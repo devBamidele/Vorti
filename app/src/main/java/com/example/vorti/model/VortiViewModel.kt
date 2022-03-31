@@ -142,25 +142,18 @@ class VortiViewModel: ViewModel() {
         _remember.value = state
     }
 
+    /**
+     * Set the values of each individual user depending on the email entered
+     */
     fun changer(value: String){
-        when (value) {
-            myDataset[0].Email -> {
-                _name.value = myDataset[0].Name
-                _email.value = myDataset[0].Email
-                _password1.value = myDataset[0].Password
-                _remember.value = myDataset[0].rem
-            }
-            myDataset[1].Email -> {
-                _name.value = myDataset[1].Name
-                _email.value = myDataset[1].Email
-                _password1.value = myDataset[1].Password
-                _remember.value = myDataset[1].rem
-            }
-            myDataset[2].Email -> {
-                _name.value = myDataset[2].Name
-                _email.value = myDataset[2].Email
-                _password1.value = myDataset[2].Password
-                _remember.value = myDataset[2].rem
+        for(i in myDataset.indices){
+            when(value) {
+                myDataset[i].Email -> {
+                    _name.value = myDataset[i].Name
+                    _email.value = myDataset[i].Email
+                    _password1.value = myDataset[i].Password
+                    _remember.value = myDataset[i].rem
+                }
             }
         }
     }
