@@ -66,13 +66,19 @@ class SigninPage : Fragment() {
         binding = null
     }
 
+    /**
+     * A summary of the verification processes that happen
+     * when the sign in button is clicked
+     */
     private fun onSignUp(): Boolean{
         val fullName = binding?.input1?.text.toString()
         val eMail = binding?.input2?.text.toString()
         val password = binding?.input3?.text.toString()
         val conPassword = binding?.input4?.text.toString()
         var c1 = false
-
+        var c2 = false
+        var c3 = false
+        var c4 = false
 
 
         if(!sharedViewModel.confirmName(fullName)){
@@ -83,7 +89,32 @@ class SigninPage : Fragment() {
             c1 = true
 
         }
-        return c1
+
+        if(!sharedViewModel.confirmEmailFormat(eMail)){
+            setInvalidEmailError(true)
+        } else{
+            setInvalidEmailError(false)
+            sharedViewModel.setEmail(eMail)
+            c2 = true
+
+        }
+
+        if(!sharedViewModel.confirmPassword(password)){
+            setInvalidPasswordError(true)
+        } else {
+            setInvalidPasswordError(false)
+            sharedViewModel.setPassword(password)
+            c3 = true
+
+        }
+
+        if(!sharedViewModel.validatePassword(password, conPassword)){
+            setUnMatchingPassword(true)
+        } else {
+            setUnMatchingPassword(false)
+            c4 = true
+        }
+        return c1 && c2 && c3 && c4
     }
 
     private fun completeProcess(): Boolean{
