@@ -8,7 +8,7 @@
     <fragment
         android:id="@+id/welcomePage"
         android:name="com.example.vorti.pages.WelcomePage"
-        android:label="fragment_welcome_page"
+        android:label="Welcome"
         tools:layout="@layout/fragment_welcome_page" >
         <action
             android:id="@+id/action_welcomePage_to_signinPage"
@@ -20,7 +20,7 @@
     <fragment
         android:id="@+id/loginPage"
         android:name="com.example.vorti.pages.LoginPage"
-        android:label="fragment_login_page"
+        android:label="Login"
         tools:layout="@layout/fragment_login_page" >
         <action
             android:id="@+id/action_loginPage_to_signinPage"
@@ -32,7 +32,7 @@
     <fragment
         android:id="@+id/signinPage"
         android:name="com.example.vorti.pages.SigninPage"
-        android:label="fragment_signin_page"
+        android:label="Sign in"
         tools:layout="@layout/fragment_signin_page" >
         <action
             android:id="@+id/action_signinPage_to_loginPage"
@@ -44,6 +44,6 @@
     <fragment
         android:id="@+id/HomePage"
         android:name="com.example.vorti.pages.BodyPage"
-        android:label="fragment_body_page"
+        android:label="Body"
         tools:layout="@layout/fragment_body_page" />
 </navigation>
